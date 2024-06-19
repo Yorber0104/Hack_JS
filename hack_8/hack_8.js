@@ -11,6 +11,18 @@
 let arr = ["foo","bar","baz","qux","echo"];
 let result = [];
 
+for (let i = 0; i < arr.length; i++) {
+    let str = arr[i];
+    if (str === "bar") {
+        result.push("b@r");
+    } else if (str === "baz") {
+        result.push("b@z");
+    } else if (str === "qux") {
+        result.push("QUX");
+    }
+}
+
+console.log(result);
 
 //export result
 module.exports = result;

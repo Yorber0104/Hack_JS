@@ -7,6 +7,13 @@
  */
 let result = [];
 
+for (i = 1; i <= 7; i++) {
+    if (i % 2 !== 0) {
+        result.push(i);
+    }
+}
+
+console.log(result)
 
 //export result
 module.exports = result;

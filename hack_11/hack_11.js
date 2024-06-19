@@ -20,5 +20,37 @@ let stringArray = ["foo","bar","baz","qux","echo"]
 let result = [];
 
 
+for (let i = 0; i < numberArray.length; i++) {
+    if (i % 3 === 0) {
+      result.push("h@ck");
+    } else if (numberArray[i] === 1) {
+      result.push("one");
+    } else if (numberArray[i] === 2) {
+      result.push(2);
+    } else if (numberArray[i] === 3) {
+      result.push("three");
+    } else if (numberArray[i] === 4) {
+      result.push(4);
+    } else if (numberArray[i] === 5) {
+      result.push("five");
+    }
+  }
+  
+  for (let i = 0; i < stringArray.length; i++) {
+    if (stringArray[i] === "foo") {
+      result.push("f00");
+    } else if (stringArray[i] === "bar") {
+      result.push("Bar");
+    } else if (stringArray[i] === "baz") {
+      result.push("b@z");
+    } else if (stringArray[i] === "qux") {
+      result.push("quX");
+    } else if (stringArray[i] === "echo") {
+      result.push("3ch0");
+    }
+  }
+  
+  console.log(result);
+
 //export result
 module.exports = result;
